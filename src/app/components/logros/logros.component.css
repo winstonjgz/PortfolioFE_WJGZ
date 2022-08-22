@@ -1,0 +1,44 @@
+.row{
+    padding: 20px;
+    background-color: rgb(46, 177, 238);
+    
+}
+
+.container{
+   
+    display: inline-block;
+    text-align: justify;
+
+}
+
+.logrosList {
+    margin: 10px;
+
+    list-style: none;
+  }
+
+
+
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(46, 177, 238);
+    
+}
+
+  h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin:10px;
+  }
+
+  p{
+    margin-left: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: medium;
+
+  }
+
+  #proyecto1{
+    text-align: right;
+  }

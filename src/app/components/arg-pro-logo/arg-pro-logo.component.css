@@ -1,0 +1,34 @@
+/* 
+
+
+
+#APLog{
+    
+    width:150px;
+}
+
+img{
+    margin:5px;
+    width:50px;
+
+}
+
+.btn{
+    margin: 5px;
+}
+
+#logInsta{
+    justify-items: right;
+}
+
+#logLink{
+    justify-items: right;
+}
+
+#GitLink{
+    justify-items: right;
+} */
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+  }

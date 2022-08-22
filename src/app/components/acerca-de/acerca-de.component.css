@@ -1,0 +1,45 @@
+.row{
+    padding: 20px;
+}
+
+div{
+    text-align: justify;
+    background-color: rgb(46, 177, 238);
+
+}
+
+@media (min-width: 550px){
+    img{
+        position:absolute;
+        border-radius: 75%;
+        left:5%;
+        box-shadow: 8px;
+    }
+}
+
+@media (max-width: 549px){
+    img{
+        position:absolute;
+        border-radius: 75%;
+        left:5%;
+        box-shadow: 8px;
+    }
+}
+
+#perfil-img{
+    width: 150px;
+}
+
+#nombre{
+    margin-top: 50px;
+    font-weight: bold;
+	display: flex;
+	justify-content: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    position: absolute;
+    border-radius: 75%;
+}

@@ -1,1 +1,29 @@
-<p>iniciar-sesion works!</p>
+<h1 class="m-5">Iniciar sesion</h1>
+
+<form [formGroup]="formLogin" class="m-5" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="email" FormControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+       <!--  <div *ngIf="email?.errors && email?.touched">
+            <p *ngIf="email?.hasError('required')" class="text-danger">
+                El email es requerido
+            </p>
+            <p *ngIf="email?.hasError('email')" class="text-danger">
+                El formato del email debe ser valido
+            </p>
+        </div> -->
+
+
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">Password</label>
+      <input type="password" FormControlName="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+  </form>
+  <button class="btn btn-info" (click)="onClick()"></button>
+
+  
