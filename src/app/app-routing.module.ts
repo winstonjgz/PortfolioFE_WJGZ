@@ -16,15 +16,15 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { MainComponent } from '../app/components/main/main.component';
 
 import { RegisterComponent } from './components/register/register.component';
-// import {canActivate, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
+import {canActivate, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
 
 
 const routes: Routes = [
-  /*{path:'', redirectTo:'iniciar-sesion', pathMatch:'full'},*/
+  {path:'', redirectTo:'iniciar-sesion', pathMatch:'full'},
   // {path:'', pathMatch:'full', redirectTo:'/main'},
-  // {path:'main', component:MainComponent, ...canActivate(()=> redirectUnauthorizedTo(['/register']))},
-  {path:'', component: MainComponent},
-  {path:'main', component: MainComponent},
+   {path:'main', component:MainComponent, ...canActivate(()=> redirectUnauthorizedTo(['/register']))},
+  // {path:'', component: MainComponent},
+   {path:'main', component: MainComponent},
   {path:'register', component: RegisterComponent},
   {path:'iniciar-sesion', component: IniciarSesionComponent},
   

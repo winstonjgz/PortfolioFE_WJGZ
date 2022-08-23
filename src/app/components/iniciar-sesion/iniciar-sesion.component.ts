@@ -33,7 +33,7 @@ export class IniciarSesionComponent implements OnInit {
     this.userService.login(this.formLogin.value)
     .then(response=>{
       console.log(response);
-      this.router.navigate(["/portafolio"]);
+      this.router.navigate(["/main"]);
     })
     .catch(error=>console.log(error));
   }

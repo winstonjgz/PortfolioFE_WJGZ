@@ -1,34 +1,9 @@
-/* 
-
-
-
-#APLog{
-    
-    width:150px;
-}
-
 img{
-    margin:5px;
-    width:50px;
-
+    height: 50px;
+    width: auto;
+    border-radius:75%;
 }
 
-.btn{
-    margin: 5px;
+.navbar{
+    background-color: aliceblue;
 }
-
-#logInsta{
-    justify-items: right;
-}
-
-#logLink{
-    justify-items: right;
-}
-
-#GitLink{
-    justify-items: right;
-} */
-
-.navbar-light .navbar-nav .nav-link {
-    color: #000;
-  }
