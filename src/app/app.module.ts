@@ -13,6 +13,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+import { LoginComponent } from './components/login/login.component';
 import { LogrosComponent } from './components/logros/logros.component';
 import { MainComponent } from './components/main/main.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -22,6 +23,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { interceptorProvider } from './services/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     ExperienciaComponent,
     FooterComponent,
     HabilidadesComponent,
+    LoginComponent,
     IniciarSesionComponent,
     LogrosComponent,
     MainComponent,
@@ -56,7 +59,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     NgCircleProgressModule.forRoot({})
 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    interceptorProvider
+  ],
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

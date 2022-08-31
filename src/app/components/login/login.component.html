@@ -1,0 +1,20 @@
+<h1 class="m-5">Iniciar sesion</h1>
+
+<form #f="ngForm" class="m-5" (ngSubmit)="onLogin()" novalidate>
+    <div class="mb-3">
+      <label class="form-label" for="nombreUsuario">Usuario</label>
+      <input type="email" FormControlName="email" class="form-control form-control-lg" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="nombreUsuario" required/>
+      
+       
+    </div>
+    <div class="mb-3">
+      <label  class="form-label" for="password">Password</label>
+      <input type="password" FormControlName="password" class="form-control" id="password" [(ngModel)]="password" required>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+  </form>
+  <!-- <button class="btn btn-info" (click)="onClick()"></button> -->
+
+  

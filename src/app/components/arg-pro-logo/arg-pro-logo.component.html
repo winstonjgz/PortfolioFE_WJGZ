@@ -28,7 +28,8 @@
         </li>
       </ul>
 
-      <button type="button" class="btn btn-outline-primary" onclick="login()" > Acceso </button>
+      <button type="button" class="btn btn-outline-primary" onclick="login()" *ngIf="!isLogged"> Acceso </button>
+      <button type="button" class="btn btn-outline-primary" onclick="onLogout()" *ngIf="isLogged"> Cerrar sesion </button>
     </div>
   </div>
   <!-- Container wrapper -->
