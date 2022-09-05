@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { interceptorProvider } from './services/interceptor-service';
+import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { interceptorProvider } from './services/interceptor-service';
     IniciarSesionComponent,
     LogrosComponent,
     MainComponent,
-    RegisterComponent
+    RegisterComponent,
+    NuevaExperienciaComponent
   ],
   imports: [
     BrowserModule,

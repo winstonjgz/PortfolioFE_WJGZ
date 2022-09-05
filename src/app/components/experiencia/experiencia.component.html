@@ -4,7 +4,7 @@
 
 <div class="row">
     <h1> Experiencia laboral: </h1>
-    <div class="col-lg-10">
+    <!-- <div class="col-lg-10">
         <ul>
             <li class="experiencialist" >
                 <h2 > <i class="fa-regular fa-building"></i>
@@ -56,5 +56,35 @@
             </li>
             
         </ul>
+    </div> -->
+    <div class="col lg-2">
+        <button type="button" class="btn btn-primary" routerlink="/nuevaexperiencia" *ngIf="isLogged">
+            Nueva Experiencia
+        </button>
     </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+
+        <table class="table">
+            <body>
+                <tr *ngFor="let Experiencia of experiencia">
+                    <td>
+                        {{Experiencia.nombreExp}}
+                    </td>
+                    <td>
+                        {{Experiencia.descripcionExp}}
+                    </td>
+                    <td>
+                        Editar
+                    </td>
+                    <td>
+                        Borrar
+                    </td>
+                </tr>
+            </body>
+        </table>
+    </div>
+
+
+
 </div>

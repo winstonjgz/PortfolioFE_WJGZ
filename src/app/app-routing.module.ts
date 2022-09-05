@@ -18,18 +18,20 @@ import { MainComponent } from '../app/components/main/main.component';
 import { RegisterComponent } from './components/register/register.component';
 import {canActivate, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
 import { LoginComponent } from './components/login/login.component';
+import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia.component';
 
 
 const routes: Routes = [
   {path:'main', component: MainComponent},
-  //{path:'', redirectTo:'iniciar-sesion', pathMatch:'full'},
+  {path:'', redirectTo:'iniciar-sesion', pathMatch:'full'},
 
-  // {path:'', pathMatch:'full', redirectTo:'/main'},
-   //{path:'main', component:MainComponent, ...canActivate(()=> redirectUnauthorizedTo(['/register']))},
+  {path:'', pathMatch:'full', redirectTo:'/main'},
+  {path:'main', component:MainComponent, ...canActivate(()=> redirectUnauthorizedTo(['/register']))},
   // {path:'', component: MainComponent},
   {path:'login', component: LoginComponent },
   {path:'register', component: RegisterComponent},
   {path:'iniciar-sesion', component: IniciarSesionComponent},
+  {path:'nueva-experiencia', component: NuevaExperienciaComponent}
   
 ];
 

@@ -3,7 +3,7 @@ export class Experiencia {
     nombreExp: string;
     descripcionExp: string;
 
-    constructor(nonbreExp: string, descripcionExp : string) {
+    constructor(nombreExp: string, descripcionExp : string) {
         this.nombreExp = nombreExp;
         this.descripcionExp = descripcionExp;
         
