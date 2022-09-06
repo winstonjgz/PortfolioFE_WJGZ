@@ -23,7 +23,7 @@ import { NuevaExperienciaComponent } from './components/experiencia/nueva-experi
 
 const routes: Routes = [
   {path:'main', component: MainComponent},
-  {path:'', redirectTo:'iniciar-sesion', pathMatch:'full'},
+  //{path:'', redirectTo:'iniciar-sesion', pathMatch:'full'},
 
   {path:'', pathMatch:'full', redirectTo:'/main'},
   {path:'main', component:MainComponent, ...canActivate(()=> redirectUnauthorizedTo(['/register']))},
