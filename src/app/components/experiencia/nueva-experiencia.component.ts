@@ -22,11 +22,11 @@ export class NuevaExperienciaComponent implements OnInit {
 onCreate(): void{
   const expe= new Experiencia(this.nombreExp, this.descripcionExp);
   this.sExperiencia.save(expe).subscribe(data => {
-    alert("Experiencia anadida");
+    alert("Experiencia agregada");
     this.router.navigate(['']);
 
 }, err=>{
-  alert("Falla en anadir");
+  alert("Falla en agregar");
   this.router.navigate([''])
 }
 )

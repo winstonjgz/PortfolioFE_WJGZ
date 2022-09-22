@@ -16,9 +16,10 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { MainComponent } from '../app/components/main/main.component';
 
 import { RegisterComponent } from './components/register/register.component';
-import {canActivate, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
+//import {canActivate, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
 import { LoginComponent } from './components/login/login.component';
 import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 
 const routes: Routes = [
@@ -26,11 +27,12 @@ const routes: Routes = [
   //{path:'', redirectTo:'iniciar-sesion', pathMatch:'full'},
 
   {path:'', pathMatch:'full', redirectTo:'/main'},
-  {path:'main', component:MainComponent, ...canActivate(()=> redirectUnauthorizedTo(['/register']))},
+  //{path:'main', component:MainComponent, ...canActivate(()=> redirectUnauthorizedTo(['/register']))},
   // {path:'', component: MainComponent},
   {path:'login', component: LoginComponent },
   {path:'register', component: RegisterComponent},
   {path:'iniciar-sesion', component: IniciarSesionComponent},
+  {path:'editexperiencia', component: EditExperienciaComponent},
   {path:'nueva-experiencia', component: NuevaExperienciaComponent}
   
 ];

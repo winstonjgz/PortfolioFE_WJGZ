@@ -57,9 +57,9 @@
             
         </ul>
     </div> -->
-    <div class="col lg-2">
+    <div class="col-lg-2">
        <!-- <button type="button" class="btn btn-primary" routerlink="/nueva-experiencia" *ngIf="isLogged"> -->
-            <button type="button" class="btn btn-primary" routerlink="/nueva-experiencia" >    
+            <button type="button" class="btn btn-primary" routerlink="/nueva-experiencia" *ngIf="isLogged">    
             Nueva Experiencia
         </button>
     </div>
@@ -67,7 +67,7 @@
     <div class="col-lg-11">
 
         <table class="table">
-            <body>
+            <tbody>
                 <tr *ngFor="let Experiencia of experiencia">
                     <td>
                         <h2>{{Experiencia.nombreExp}}</h2>
@@ -75,14 +75,14 @@
                     <td>
                         {{Experiencia.descripcionExp}}
                     </td>
-                    <td>
+                    <td><i class="bi bi-pencil-square"></i>
                         Editar
                     </td>
-                    <td>
+                    <td><i class="bi bi-trash-fill"></i>
                         Borrar
                     </td>
                 </tr>
-            </body>
+            </tbody>
         </table>
     </div>
 
