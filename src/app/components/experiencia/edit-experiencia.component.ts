@@ -29,7 +29,7 @@ export class EditExperienciaComponent implements OnInit {
 
   onUpdate(): void{
     const id= this.activatedRouter.snapshot.params['id'];
-    this.sExperiencia.update(id, this.explab).subscribe(
+    this.sExperiencia.update(id, this.explab).subscribe(  
       data=> {
         this.router.navigate(['']);
 

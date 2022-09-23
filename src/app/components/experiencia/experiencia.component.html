@@ -75,11 +75,17 @@
                     <td>
                         {{Experiencia.descripcionExp}}
                     </td>
-                    <td><i class="bi bi-pencil-square"></i>
+                    <td *ngIf="isLogged"> 
+                    <button type="button" class="btn btn-info" routerLink="/editexperiencia/{{Experiencia.id}}">
+                        <i class="bi bi-pencil-square"></i>
                         Editar
+                    </button> 
                     </td>
-                    <td><i class="bi bi-trash-fill"></i>
+                    <td *ngIf="isLogged">
+                        <button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)">
+                        <i class="bi bi-trash-fill"></i>
                         Borrar
+                    </button>
                     </td>
                 </tr>
             </tbody>

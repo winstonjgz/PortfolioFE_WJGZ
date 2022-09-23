@@ -33,7 +33,7 @@ const routes: Routes = [
   {path:'register', component: RegisterComponent},
   {path:'iniciar-sesion', component: IniciarSesionComponent},
   {path:'editexperiencia', component: EditExperienciaComponent},
-  {path:'nueva-experiencia', component: NuevaExperienciaComponent}
+  {path:'nueva-experiencia/:id', component: NuevaExperienciaComponent}
   
 ];
 
