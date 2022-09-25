@@ -20,7 +20,7 @@ public lista():Observable<Experiencia[]>{
 }
 
 public detail(id: number): Observable<Experiencia>{
-  return this.httpClient.get<Experiencia>(this.experienciaURL + `detail/$(id)`);
+  return this.httpClient.get<Experiencia>(this.experienciaURL + `detail/${id}`);
 
 }
 

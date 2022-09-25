@@ -26,6 +26,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { interceptorProvider } from './services/interceptor-service';
 import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NuevaEducacionComponent } from './components/educacion/nueva-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     MainComponent,
     RegisterComponent,
     NuevaExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NuevaEducacionComponent,
+    EditEducacionComponent
   ],
   imports: [
     BrowserModule,

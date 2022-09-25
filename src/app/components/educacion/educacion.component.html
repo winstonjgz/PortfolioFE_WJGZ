@@ -1,4 +1,4 @@
-<head>
+<!-- <head>
     <script src="https://kit.fontawesome.com/302a7325c5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -46,6 +46,52 @@
             </ul>
         </div>
     </div>
+
+
+</div>-->
+
+<head>
+    <script src="https://kit.fontawesome.com/302a7325c5.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="row">
+    <h1> Educacion: </h1>
+   
+    <div class="col-lg-2">
+       <!-- <button type="button" class="btn btn-primary" routerlink="/nueva-experiencia" *ngIf="isLogged"> -->
+            <button type="button" class="btn btn-primary" routerlink="/nueva-educacion" *ngIf="isLogged">    
+            Nueva Educacion
+        </button>
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2>{{Educacion.nombreEdu}}</h2>
+                    </td>
+                    <td>
+                        {{Educacion.descripcionEdu}}
+                    </td>
+                    <td *ngIf="isLogged"> 
+                    <button type="button" class="btn btn-info" routerLink="/edit-educacion/{{Educacion.id}}">
+                        <i class="bi bi-pencil-square"></i>
+                        Editar
+                    </button> 
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button type="button" class="btn btn-danger" (click)="delete(Educacion.id)">
+                        <i class="bi bi-trash-fill"></i>
+                        Borrar
+                    </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 
 
 </div>

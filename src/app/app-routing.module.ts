@@ -20,6 +20,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { NuevaEducacionComponent } from './components/educacion/nueva-educacion.component';
 
 
 const routes: Routes = [
@@ -33,6 +35,8 @@ const routes: Routes = [
   {path:'register', component: RegisterComponent},
   {path:'iniciar-sesion', component: IniciarSesionComponent},
   {path:'editexperiencia', component: EditExperienciaComponent},
+  {path:'edit-educacion', component: EditEducacionComponent},
+  {path:'nueva-educacion/:id', component: NuevaEducacionComponent},
   {path:'nueva-experiencia/:id', component: NuevaExperienciaComponent}
   
 ];
