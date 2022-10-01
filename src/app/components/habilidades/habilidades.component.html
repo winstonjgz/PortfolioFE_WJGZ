@@ -5,9 +5,9 @@
         <h1> Habilidades: </h1>
         <div class="text-center col-sm-3 col-md-3 col-lg-3">
             <circle-progress
-            [percent]="70"
+            [percent]="(habilidad.porcentaje)"
             [radius]="100"
-            [title]="'HTML'"
+            [title]="(habilidad.nombre)"
             [titleColor]="'blue'"
             [titleFontSize]="'1.5em'"
             [showSubtitle]="false"
@@ -19,125 +19,18 @@
             [animationDuration]="300"
             [units]="''"
             ></circle-progress>
-        </div>
-        <div class="text-center col-sm-3 col-md-3 col-lg-3">
-            <circle-progress
-            [percent]="70"
-            [radius]="100"
-            [title]="'CCS'"
-            [titleColor]="'blue'"
-            [titleFontSize]="'1.5em'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="15"
-            [innerStrokeWidth]="5"
-            [outerStrokeColor]="'blue'"
-            [innerStrokeColor]="'green'"
-            [animation]="true"
-            [animationDuration]="300"
-            [units]="''"
-            ></circle-progress>
-        </div>
-        <div class="text-center col-sm-3 col-md-3 col-lg-3">
-            <circle-progress
-            [percent]="80"
-            [radius]="100"
-            [title]="'JavaScript'"
-            [titleColor]="'blue'"
-            [titleFontSize]="'1.5em'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="15"
-            [innerStrokeWidth]="5"
-            [outerStrokeColor]="'blue'"
-            [innerStrokeColor]="'green'"
-            [animation]="true"
-            [animationDuration]="300"
-            [units]="''"
-            ></circle-progress>
-        </div>
-        <div class="text-center col-sm-3 col-md-3 col-lg-3">
-            <circle-progress
-            [percent]="60"
-            [radius]="100"
-            [title]="'Bootstrap'"
-            [titleColor]="'blue'"
-            [titleFontSize]="'1.5em'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="15"
-            [innerStrokeWidth]="5"
-            [outerStrokeColor]="'blue'"
-            [innerStrokeColor]="'green'"
-            [animation]="true"
-            [animationDuration]="300"
-            [units]="''"
-            ></circle-progress>
-        </div>
-        <div class="text-center col-sm-3 col-md-3 col-lg-3">
-            <circle-progress
-            [percent]="55"
-            [radius]="100"
-            [title]="'Angular'"
-            [titleColor]="'blue'"
-            [titleFontSize]="'1.5em'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="15"
-            [innerStrokeWidth]="5"
-            [outerStrokeColor]="'blue'"
-            [innerStrokeColor]="'green'"
-            [animation]="true"
-            [animationDuration]="300"
-            [units]="''"
-            ></circle-progress>
-        </div>
-        <div class="text-center col-sm-3 col-md-3 col-lg-3">
-            <circle-progress
-            [percent]="75"
-            [radius]="100"
-            [title]="'Java'"
-            [titleColor]="'blue'"
-            [titleFontSize]="'1.5em'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="15"
-            [innerStrokeWidth]="5"
-            [outerStrokeColor]="'blue'"
-            [innerStrokeColor]="'green'"
-            [animation]="true"
-            [animationDuration]="300"
-            [units]="''"
-            ></circle-progress>
-        </div>
-        <div class="text-center col-sm-3 col-md-3 col-lg-3">
-            <circle-progress
-            [percent]="65"
-            [radius]="100"
-            [title]="'Python'"
-            [titleColor]="'blue'"
-            [titleFontSize]="'1.5em'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="15"
-            [innerStrokeWidth]="5"
-            [outerStrokeColor]="'blue'"
-            [innerStrokeColor]="'green'"
-            [animation]="true"
-            [animationDuration]="300"
-            [units]="''"
-            ></circle-progress>
-        </div>
-        <div class="text-center col-sm-3 col-md-3 col-lg-3">
-            <circle-progress
-            [percent]="60"
-            [radius]="100"
-            [title]="'R'"
-            [titleColor]="'blue'"
-            [titleFontSize]="'1.5em'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="15"
-            [innerStrokeWidth]="5"
-            [outerStrokeColor]="'blue'"
-            [innerStrokeColor]="'green'"
-            [animation]="true"
-            [animationDuration]="300"
-            [units]="''"
-            ></circle-progress>
+            <td *ngIf="isLogged"> 
+                <button type="button" class="btn btn-info" routerLink="/habilidad/{{Habilidad.id}}">
+                    <i class="bi bi-pencil-square"></i>
+                    Editar
+                </button> 
+                </td>
+                <td *ngIf="isLogged">
+                    <button type="button" class="btn btn-danger" (click)="delete(Habilidad.id)">
+                    <i class="bi bi-trash-fill"></i>
+                    Borrar
+                </button>
+                </td>
         </div>
     </div>
 
