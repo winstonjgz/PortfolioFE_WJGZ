@@ -12,7 +12,7 @@ export class AppRoutingModule { } */
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+//import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { MainComponent } from '../app/components/main/main.component';
 
 import { RegisterComponent } from './components/register/register.component';
@@ -25,15 +25,16 @@ import { NuevaEducacionComponent } from './components/educacion/nueva-educacion.
 
 
 const routes: Routes = [
+  {path:'', component: MainComponent},
   {path:'main', component: MainComponent},
   //{path:'', redirectTo:'iniciar-sesion', pathMatch:'full'},
 
-  {path:'', pathMatch:'full', redirectTo:'/main'},
+  //{path:'main', pathMatch:'full', redirectTo:'/main', component: MainComponent},
   //{path:'main', component:MainComponent, ...canActivate(()=> redirectUnauthorizedTo(['/register']))},
   // {path:'', component: MainComponent},
   {path:'login', component: LoginComponent },
   {path:'register', component: RegisterComponent},
-  {path:'iniciar-sesion', component: IniciarSesionComponent},
+  //{path:'iniciar-sesion', component: IniciarSesionComponent},
   {path:'editexperiencia', component: EditExperienciaComponent},
   {path:'edit-educacion', component: EditEducacionComponent},
   {path:'nueva-educacion/:id', component: NuevaEducacionComponent},

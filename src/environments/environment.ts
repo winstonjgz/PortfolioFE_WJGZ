@@ -12,7 +12,7 @@ export const environment = {
     messagingSenderId: '918480288514',
   }, */
   production: false,
-  URL:'http://localhost:8080', 
+  URL:'http://localhost:8080/', 
   //URL:'https://bendportfoliowjgz.herokuapp.com/'
 
 };

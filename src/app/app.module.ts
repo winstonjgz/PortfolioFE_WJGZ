@@ -12,7 +12,7 @@ import { EducacionComponent } from './components/educacion/educacion.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
-import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+//import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogrosComponent } from './components/logros/logros.component';
 import { MainComponent } from './components/main/main.component';
@@ -44,7 +44,7 @@ import { EditHabilidadComponent } from './components/habilidades/edit-habilidad.
     FooterComponent,
     HabilidadesComponent,
     LoginComponent,
-    IniciarSesionComponent,
+    //IniciarSesionComponent,
     LogrosComponent,
     MainComponent,
     RegisterComponent,
@@ -65,7 +65,7 @@ import { EditHabilidadComponent } from './components/habilidades/edit-habilidad.
     
    
     ReactiveFormsModule,
-        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        //provideFirebaseApp(() => initializeApp(environment.firebase)),
         provideAuth(() => getAuth()),
     
     NgCircleProgressModule.forRoot({})

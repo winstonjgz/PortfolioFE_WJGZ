@@ -7,5 +7,6 @@ export const environment = {
     authDomain: 'gdi-firebase-auth-e9542.firebaseapp.com',
     messagingSenderId: '918480288514',
   }, */
-  production: true
+  production: true,
+  URL:'https://bendportfoliowjgz.herokuapp.com/'
 };

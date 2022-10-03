@@ -1,9 +1,12 @@
 <div class="container-flex">
+    <div class="col-lg-2">
+        <button type="button" routerLink="/nuevahabilidad" class="btn btn-dark" *ngIf="isLogged">Nueva Habilidad</button>
+    </div>
 
 
     <div class="row">
         <h1> Habilidades: </h1>
-        <div class="text-center col-sm-3 col-md-3 col-lg-3">
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" *ngFor="let habilidad of habilidades">
             <circle-progress
             [percent]="(habilidad.porcentaje)"
             [radius]="100"
@@ -20,13 +23,13 @@
             [units]="''"
             ></circle-progress>
             <td *ngIf="isLogged"> 
-                <button type="button" class="btn btn-info" routerLink="/habilidad/{{Habilidad.id}}">
+                <button type="button" class="btn btn-info" routerLink="/habilidad/{{habilidad.id}}">
                     <i class="bi bi-pencil-square"></i>
                     Editar
                 </button> 
                 </td>
                 <td *ngIf="isLogged">
-                    <button type="button" class="btn btn-danger" (click)="delete(Habilidad.id)">
+                    <button type="button" class="btn btn-danger" (click)="delete(habilidad.id)">
                     <i class="bi bi-trash-fill"></i>
                     Borrar
                 </button>

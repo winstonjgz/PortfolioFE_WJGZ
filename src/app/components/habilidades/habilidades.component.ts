@@ -17,6 +17,36 @@ export class HabilidadesComponent implements OnInit {
     isLogged=false;
     
   ngOnInit(): void {
+    this.cargarHabilidades;
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+    }else{
+      this.isLogged= false;
+    }
   }
 
+  cargarHabilidades(): void{
+    this.sHabilidad.lista().subscribe(
+      
+      data=> {
+        this.habilidades=data;
+      }
+      )
+    }
+
+    delete(id: number){
+      if(id != undefined){
+        this.sHabilidad.delete(id).subscribe(
+          data => {
+            this.cargarHabilidades();
+          }, err =>{
+            alert('No se pudo borrar la habilidad');
+          }
+        )
+      }
+    }
 }
+
+  
+
+

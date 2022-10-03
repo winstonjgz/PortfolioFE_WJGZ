@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environment';
 import { JwtDto } from '../model/jwt-dto';
 import { LoginUsuario } from '../model/login-usuario';
 import { NuevoUsuario } from '../model/nuevo-usuario';
+import { TokenService } from './token.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,11 +13,11 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 export class AuthService {
   //authURL='http://localhost:8080/auth/';
   //authURL='https://bendportfoliowjgz.herokuapp.com/';
-  authURL= environment.URL+'/auth/';
+  authURL= environment.URL+'auth/';
   
   
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private tokenService: TokenService) { }
 
 
   public nuevo(nuevoUsuario:NuevoUsuario): Observable<any>{
@@ -28,4 +29,9 @@ export class AuthService {
     return this.httpClient.post<JwtDto>(this.authURL + 'login', loginUsuario);
   }
 
+  onLogout():void{
+    this.tokenService.logOut();
+    window.location.reload();
+
+}
 }

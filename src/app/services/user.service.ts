@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+/* import { Injectable } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, 
 signInWithPopup, GoogleAuthProvider } from '@angular/fire/auth';
 
@@ -9,7 +9,7 @@ export class UserService {
 
   constructor(private auth: Auth) { }
 
-  register({email, password}:any){
+  /* register({email, password}:any){
   return createUserWithEmailAndPassword(this.auth,email, password);
   }
 
@@ -19,10 +19,11 @@ export class UserService {
 
   loginWithGoogle(){
     return signInWithPopup(this.auth, new GoogleAuthProvider());
-  }
-
+  } */
+/*
   logout(){
     return signOut(this.auth);
   }
 }
 
+ */
