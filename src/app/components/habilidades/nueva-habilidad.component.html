@@ -1,17 +1,32 @@
-<div class="container">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm"  >
-                <div class="form-group">
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="porcentaje">Porcentaje:</label>
-                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
-                </div>
-                <button class="btn btn-primary" (click)="onCreate">Agregar Habilidad</button>
-            </form>
+
+
+<section class="vh-100" style="background-color: #508bfc;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+                        <h1 class="m-5">Habilidades</h1>
+                        
+                        <form (ngSubmit)="onCreate()" novalidate #f="ngForm"  >
+                            <div class="form-group">
+                                <label for="nombre">Nombre: </label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="porcentaje">Porcentaje:</label>
+                                <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+                            </div>
+                            <div></div>
+                            <button class="btn btn-primary" (click)="onCreate">Agregar Habilidad</button>
+                        </form>
+              
+              
+              
+              
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+    </section>

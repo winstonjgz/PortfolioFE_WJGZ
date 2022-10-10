@@ -21,7 +21,7 @@ export class EditHabilidadComponent implements OnInit {
         data => {
           this.habilidad = data;
         }, err =>{
-          alert('Error al modificar experiencia');
+          alert('Error al modificar habilidad');
           this.router.navigate(['']);
         }
       )

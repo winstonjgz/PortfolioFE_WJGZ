@@ -9,7 +9,7 @@ import { Habilidad } from '../model/habilidad';
 })
 export class HabilidadService {
 
-  habilidadURL=environment.URL+'habilidad/';
+  habilidadURL=environment.URL+'rhysoft/';
 
   constructor(private httpClient:HttpClient) { }
 
@@ -24,7 +24,7 @@ export class HabilidadService {
   }
 
   public save(habilidad: Habilidad):Observable<any>{
-    return this.httpClient.post<any>(this.habilidadURL+'create', habilidad);
+    return this.httpClient.post<any>(this.habilidadURL+`crearHab`, habilidad);
   }
 
   public update(id: number, habilidad: Habilidad):Observable<any>{

@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/services/token.service';
   styleUrls: ['./habilidades.component.css']
 })
 export class HabilidadesComponent implements OnInit {
-  habilidades: Habilidad[]=[];
+  habilidad: Habilidad[]=[];
 
   constructor(
     private sHabilidad:HabilidadService, private tokenService: TokenService
@@ -29,12 +29,12 @@ export class HabilidadesComponent implements OnInit {
     this.sHabilidad.lista().subscribe(
       
       data=> {
-        this.habilidades=data;
+        this.habilidad=data;
       }
       )
     }
 
-    delete(id: number){
+    delete(id?: number){
       if(id != undefined){
         this.sHabilidad.delete(id).subscribe(
           data => {

@@ -1,3 +1,7 @@
+<head>
+    <script src="https://kit.fontawesome.com/302a7325c5.js" crossorigin="anonymous"></script>
+</head>
+
 <div class="row">
     
     <h1> Habilidades Duras: </h1>
@@ -9,11 +13,12 @@
     <div class="col-lg-1"></div>
 
     <div class="row">
-        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" *ngFor="let habilidad of habilidades">
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" *ngFor="let Habilidad of habilidad">
             <circle-progress
-            [percent]="(habilidad.porcentaje)"
+            [percent]="(Habilidad.porcentaje)"
             [radius]="100"
-            [title]="(habilidad.nombre)"
+            [title]="(Habilidad.nombre)"
+            [showTitle]="true"
             [titleColor]="'blue'"
             [titleFontSize]="'1.5em'"
             [showSubtitle]="false"
@@ -26,13 +31,13 @@
             [units]="''"
             ></circle-progress>
             <td *ngIf="isLogged"> 
-                <button type="button" class="btn btn-info" routerLink="edithabilidad/{{habilidad.id}}">
+                <button type="button" class="btn btn-info" routerLink="edithabilidad/{{Habilidad.id}}">
                     <i class="bi bi-pencil-square"></i>
                     Editar
                 </button> 
                 </td>
                 <td *ngIf="isLogged">
-                    <button type="button" class="btn btn-danger" (click)="delete(habilidad.id)">
+                    <button type="button" class="btn btn-danger" (click)="delete(Habilidad.id)">
                     <i class="bi bi-trash-fill"></i>
                     Borrar
                 </button>

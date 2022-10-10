@@ -26,7 +26,7 @@ public detail(id: number): Observable<Experiencia>{
 }
 
 public save(experiencia: Experiencia): Observable<any>{
-  return this.httpClient.post<any>(this.experienciaURL + `create`, experiencia);
+  return this.httpClient.post<any>(this.experienciaURL + `crearExp`, experiencia);
 }
 
 public update(id: number, experiencia: Experiencia): Observable<any>{

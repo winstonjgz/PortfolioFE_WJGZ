@@ -1,7 +1,13 @@
-<div class="container">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm"  >
+
+<section class="vh-100" style="background-color: #508bfc;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+              <h1 class="m-5">Experiencia: </h1>
+              
+              <form (ngSubmit)="onCreate()" novalidate #f="ngForm"  >
                 <div class="form-group">
                     <label for="nombreExp">Nombre Empresa</label>
                     <input type="text" class="form-control" id="nombreExp" name="nombreExp" [(ngModel)]="nombreExp" required>
@@ -10,8 +16,16 @@
                     <label for="descripcionExp">Cargo / Responsabilidad:</label>
                     <input type="text" class="form-control" id="descripcionExp" name="descripcionExp" [(ngModel)]="descripcionExp" required>
                 </div>
+                <div></div>
                 <button class="btn btn-primary" >Agregar Experiencia</button>
             </form>
+              
+              
+              
+              
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+    </section>
