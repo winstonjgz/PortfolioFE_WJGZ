@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Habilidad } from 'src/app/model/habilidad';
-import { HabilidadService } from 'src/app/services/habilidad.service';
+import { Hysoft } from 'src/app/model/Hysoft';
+
+import { HysoftService } from 'src/app/services/hysoft.service';
 
 @Component({
   selector: 'app-nueva-habilidad',
@@ -14,14 +15,14 @@ export class NuevaHabilidadComponent implements OnInit {
   porcentaje: number = 0;
 
   constructor(
-    private sHabilidad:HabilidadService, private router: Router
+    private sHabilidad:HysoftService, private router: Router
   ) { }
 
   ngOnInit(): void {
   }
 
   onCreate(): void{
-    const habi= new Habilidad(this.nombre, this.porcentaje);
+    const habi= new Hysoft(this.nombre, this.porcentaje);
     this.sHabilidad.save(habi).subscribe(data => {
       alert("Habilidad agregada");
       this.router.navigate(['']);

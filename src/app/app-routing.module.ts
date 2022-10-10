@@ -24,7 +24,6 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
 import { NuevaEducacionComponent } from './components/educacion/nueva-educacion.component';
 import { NuevaHabilidadComponent } from './components/habilidades/nueva-habilidad.component';
 import { EditHabilidadComponent } from './components/habilidades/edit-habilidad.component';
-import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 
 
 const routes: Routes = [

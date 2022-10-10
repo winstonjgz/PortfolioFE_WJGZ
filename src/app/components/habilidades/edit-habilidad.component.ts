@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Habilidad } from 'src/app/model/habilidad';
-import { HabilidadService } from 'src/app/services/habilidad.service';
+import { Hysoft } from 'src/app/model/Hysoft';
+import { HysoftService } from 'src/app/services/hysoft.service';
 
 @Component({
   selector: 'app-edit-habilidad',
@@ -9,9 +9,9 @@ import { HabilidadService } from 'src/app/services/habilidad.service';
   styleUrls: ['./edit-habilidad.component.css']
 })
 export class EditHabilidadComponent implements OnInit {
-  habilidad : Habilidad = null;
+  habilidad : Hysoft = null;
 
-  constructor(private sHabilidad: HabilidadService, private activatedRouter: ActivatedRoute, 
+  constructor(private sHabilidad: HysoftService, private activatedRouter: ActivatedRoute, 
     private router: Router) { }
 
 

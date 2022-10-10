@@ -59,6 +59,7 @@ import { EditHabilidadComponent } from './components/habilidades/edit-habilidad.
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    
     FormsModule,
     
     

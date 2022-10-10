@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Habilidad } from 'src/app/model/habilidad';
-import { HabilidadService } from 'src/app/services/habilidad.service';
+import { Hysoft } from 'src/app/model/Hysoft';
+import { HysoftService } from 'src/app/services/hysoft.service';
 import { TokenService } from 'src/app/services/token.service';
 
 @Component({
@@ -9,10 +9,10 @@ import { TokenService } from 'src/app/services/token.service';
   styleUrls: ['./habilidades.component.css']
 })
 export class HabilidadesComponent implements OnInit {
-  habilidad: Habilidad[]=[];
+  habilidad: Hysoft[]=[];
 
   constructor(
-    private sHabilidad:HabilidadService, private tokenService: TokenService
+    private sHabilidad:HysoftService, private tokenService: TokenService
   ) { }
     isLogged=false;
     
@@ -34,7 +34,7 @@ export class HabilidadesComponent implements OnInit {
       )
     }
 
-    delete(id?: number){
+    delete(id: number){
       if(id != undefined){
         this.sHabilidad.delete(id).subscribe(
           data => {
