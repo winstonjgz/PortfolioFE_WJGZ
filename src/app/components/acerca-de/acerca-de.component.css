@@ -43,3 +43,10 @@ img{
     position: absolute;
     border-radius: 75%;
 }
+
+p{
+    
+	display: flex;
+	justify-content: center;
+   
+}

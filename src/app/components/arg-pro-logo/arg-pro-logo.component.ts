@@ -25,13 +25,13 @@ export class ArgProLogoComponent implements OnInit {
   }
 
 
-  onLogout():void{
+  onLogOut():void{
     this.tokenService.logOut();
     window.location.reload();
   }
 
-  login(){ 
-    this.router.navigate(['/login'])
+  onLogin(){ 
+    this.router.navigate(['/login']);
   }
 
 }

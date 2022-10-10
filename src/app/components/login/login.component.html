@@ -1,20 +1,33 @@
-<h1 class="m-5">Iniciar sesion</h1>
-
-<form #f="ngForm" class="m-5" (ngSubmit)="onLogin()" novalidate>
-    <div class="mb-3">
-      <label class="form-label" for="nombreUsuario">Usuario</label>
-      <input type="text" FormControlName="nombreUsuario" class="form-control form-control-lg" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="nombreUsuario" required/>
-      
-       
+<section class="vh-100" style="background-color: #508bfc;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+            <h1 class="m-5">Iniciar sesion</h1>
+            
+            <form #f="ngForm" class="m-5" (ngSubmit)="onLogin()" novalidate>
+                <div class="mb-3">
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+                  <input type="text" class="form-control form-control-lg" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="nombreUsuario" required/>
+            <!--       <input type="text" FormControlName="nombreUsuario" class="form-control form-control-lg" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="nombreUsuario" required/>
+             -->
+                   
+                </div>
+                <div class="mb-3">
+                  <label  class="form-label" for="password">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" (click)="onLogin">Login</button>
+            
+              </form>
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label  class="form-label" for="password">Password</label>
-      <input type="password" FormControlName="password" class="form-control" id="password" [(ngModel)]="password" required>
-    </div>
-    
-    <button type="submit" class="btn btn-primary">Enviar</button>
-
-  </form>
-  <!-- <button class="btn btn-info" (click)="onClick()"></button> -->
-
-  
+  </section>

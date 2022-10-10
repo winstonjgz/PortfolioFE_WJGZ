@@ -22,6 +22,9 @@ import { NuevaExperienciaComponent } from './components/experiencia/nueva-experi
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { NuevaEducacionComponent } from './components/educacion/nueva-educacion.component';
+import { NuevaHabilidadComponent } from './components/habilidades/nueva-habilidad.component';
+import { EditHabilidadComponent } from './components/habilidades/edit-habilidad.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 
 
 const routes: Routes = [
@@ -37,8 +40,14 @@ const routes: Routes = [
   //{path:'iniciar-sesion', component: IniciarSesionComponent},
   {path:'editexperiencia', component: EditExperienciaComponent},
   {path:'edit-educacion', component: EditEducacionComponent},
-  {path:'nueva-educacion/:id', component: NuevaEducacionComponent},
-  {path:'nueva-experiencia/:id', component: NuevaExperienciaComponent}
+  {path:'nueva-educacion', component: NuevaEducacionComponent},
+  {path:'nueva-experiencia', component: NuevaExperienciaComponent},
+  {path:'nuevahabilidad', component: NuevaHabilidadComponent},
+  //  {path:'nuevahabilidad/:id', component: NuevaHabilidadComponent},
+
+  //{path:'explab', component: ExperienciaComponent},
+  {path:'edithabilidad/:id', component: EditHabilidadComponent}
+
   
 ];
 

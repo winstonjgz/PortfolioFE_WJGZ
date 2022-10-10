@@ -59,7 +59,7 @@
     </div> -->
     <div class="col-lg-2">
        <!-- <button type="button" class="btn btn-primary" routerlink="/nueva-experiencia" *ngIf="isLogged"> -->
-            <button type="button" class="btn btn-primary" routerlink="/nueva-experiencia" *ngIf="isLogged">    
+            <button type="button" class="btn btn-primary" routerLink="nueva-experiencia" *ngIf="isLogged">    
             Nueva Experiencia
         </button>
     </div>
@@ -76,7 +76,7 @@
                         {{Experiencia.descripcionExp}}
                     </td>
                     <td *ngIf="isLogged"> 
-                    <button type="button" class="btn btn-info" routerLink="/editexperiencia/{{Experiencia.id}}">
+                    <button type="button" class="btn btn-info" routerLink="editexperiencia/{{Experiencia.id}}">
                         <i class="bi bi-pencil-square"></i>
                         Editar
                     </button> 

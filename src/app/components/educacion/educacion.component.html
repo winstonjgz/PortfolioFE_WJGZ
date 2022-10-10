@@ -59,7 +59,7 @@
    
     <div class="col-lg-2">
        <!-- <button type="button" class="btn btn-primary" routerlink="/nueva-experiencia" *ngIf="isLogged"> -->
-            <button type="button" class="btn btn-primary" routerlink="/nueva-educacion" *ngIf="isLogged">    
+            <button type="button" class="btn btn-primary" routerLink="nueva-educacion" *ngIf="isLogged">    
             Nueva Educacion
         </button>
     </div>
@@ -76,7 +76,7 @@
                         {{Educacion.descripcionEdu}}
                     </td>
                     <td *ngIf="isLogged"> 
-                    <button type="button" class="btn btn-info" routerLink="/edit-educacion/{{Educacion.id}}">
+                    <button type="button" class="btn btn-info" routerLink="edit-educacion/{{Educacion.id}}">
                         <i class="bi bi-pencil-square"></i>
                         Editar
                     </button> 

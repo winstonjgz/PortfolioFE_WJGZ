@@ -10,7 +10,7 @@ import { Experiencia } from '../model/experiencia';
 export class SExperienciaService {
   //experienciaURL = 'http://localhost:8080/explab'
   //experienciaURL='https://bendportfoliowjgz.herokuapp.com/';
-  experienciaURL= environment.URL+'/explab';
+  experienciaURL= environment.URL+'explab/';
 
   constructor(private httpClient:HttpClient) { }
 

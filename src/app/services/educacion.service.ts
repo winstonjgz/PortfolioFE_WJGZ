@@ -10,7 +10,7 @@ import { Educacion } from '../model/educacion';
 export class EducacionService {
   //educacionURL = 'http://localhost:8080/educacion';
   //educacionURL='https://bendportfoliowjgz.herokuapp.com/educacion';
-  educacionURL=environment.URL+'/educacion/';
+  educacionURL=environment.URL+'educacion/';
   
   constructor(private httpClient:HttpClient) { }
 

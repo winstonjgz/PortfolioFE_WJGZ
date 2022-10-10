@@ -9,7 +9,7 @@ import { Habilidad } from '../model/habilidad';
 })
 export class HabilidadService {
 
-  habilidadURL=environment.URL+'/habilidad/';
+  habilidadURL=environment.URL+'habilidad/';
 
   constructor(private httpClient:HttpClient) { }
 

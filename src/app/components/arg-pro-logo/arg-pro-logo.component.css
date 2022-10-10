@@ -7,3 +7,11 @@ img{
 .navbar{
     background-color: aliceblue;
 }
+
+.container-fluid{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
