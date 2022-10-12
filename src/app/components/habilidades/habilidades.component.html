@@ -2,7 +2,7 @@
     <script src="https://kit.fontawesome.com/302a7325c5.js" crossorigin="anonymous"></script>
 </head>
 
-<div class="row">
+<!--<div class="row">
     
     <h1> Habilidades Duras: </h1>
     
@@ -45,4 +45,40 @@
         </div>
     </div>
 
-</div>    
+</div>  -->
+<div class="row">
+    <h1> Habilidades Duras: </h1>
+    
+    <div class="col-lg-2">
+        <button type="button" routerLink="/nuevahabilidad" class="btn btn-dark" *ngIf="isLogged">Nueva Habilidad</button>
+    </div>
+    
+    <div class="col-lg-1"></div>
+    <div class="row text-center col-sm-3 col-md-3 col-lg-3">
+
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let hysoft of hysoftC">
+                    <td>
+                        <h2>{{hysoft.nombre}}</h2>
+                    </td>
+                    <td>
+                        {{hysoft.porcentaje}}
+                    </td>
+                    <td *ngIf="isLogged"> 
+                    <button type="button" class="btn btn-info" routerLink="edithabilidad/{{hysoft.id}}">
+                        <i class="bi bi-pencil-square"></i>
+                        Editar
+                    </button> 
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button type="button" class="btn btn-danger" (click)="delete(hysoft.id)">
+                        <i class="bi bi-trash-fill"></i>
+                        Borrar
+                    </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

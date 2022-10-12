@@ -17,7 +17,7 @@ export class EditHabilidadComponent implements OnInit {
 
     ngOnInit(): void {
       const id= this.activatedRouter.snapshot.params['id'];
-      this.sHabilidad.details(id).subscribe(
+      this.sHabilidad.detail(id).subscribe(
         data => {
           this.habilidad = data;
         }, err =>{

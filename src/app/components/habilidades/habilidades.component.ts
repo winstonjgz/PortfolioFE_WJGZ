@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/services/token.service';
   styleUrls: ['./habilidades.component.css']
 })
 export class HabilidadesComponent implements OnInit {
-  habilidad: Hysoft[]=[];
+  hysoftC: Hysoft[]=[];
 
   constructor(
     private sHabilidad:HysoftService, private tokenService: TokenService
@@ -29,7 +29,7 @@ export class HabilidadesComponent implements OnInit {
     this.sHabilidad.lista().subscribe(
       
       data=> {
-        this.habilidad=data;
+        this.hysoftC=data;
       }
       )
     }
