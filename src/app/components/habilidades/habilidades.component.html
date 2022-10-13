@@ -46,7 +46,7 @@
     </div>
 
 </div>  -->
-<div class="row">
+<!-- <div class="row">
     <h1> Habilidades Duras: </h1>
     
     <div class="col-lg-2">
@@ -58,21 +58,21 @@
 
         <table class="table">
             <tbody>
-                <tr *ngFor="let hysoft of hysoftC">
+                <tr *ngFor="let Hysoft of habilidad">
                     <td>
-                        <h2>{{hysoft.nombre}}</h2>
+                        <h2>{{Hysoft.nombre}}</h2>
                     </td>
                     <td>
-                        {{hysoft.porcentaje}}
+                        {{Hysoft.porcentaje}}
                     </td>
                     <td *ngIf="isLogged"> 
-                    <button type="button" class="btn btn-info" routerLink="edithabilidad/{{hysoft.id}}">
+                    <button type="button" class="btn btn-info" routerLink="edithabilidad/{{Hysoft.id}}">
                         <i class="bi bi-pencil-square"></i>
                         Editar
                     </button> 
                     </td>
                     <td *ngIf="isLogged">
-                        <button type="button" class="btn btn-danger" (click)="delete(hysoft.id)">
+                        <button type="button" class="btn btn-danger" (click)="delete(Hysoft.id)">
                         <i class="bi bi-trash-fill"></i>
                         Borrar
                     </button>
@@ -81,4 +81,168 @@
             </tbody>
         </table>
     </div>
+</div> -->
+
+<div class="row">
+    
+    <h1> Habilidades Duras: </h1>
+    
+      
+    <div class="col-lg-1"></div>
+
+    <div class="row">
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" >
+            <circle-progress
+            [percent]="65"
+            [radius]="100"
+            [title]="'JavaScript'"
+            [showTitle]="true"
+            [titleColor]="'blue'"
+            [titleFontSize]="'1.5em'"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="15"
+            [innerStrokeWidth]="5"
+            [outerStrokeColor]="'blue'"
+            [innerStrokeColor]="'green'"
+            [animation]="true"
+            [animationDuration]="300"
+            [units]="''"
+            ></circle-progress>
+            
+        </div>
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" >
+            <circle-progress
+            [percent]="75"
+            [radius]="100"
+            [title]="'HTML'"
+            [showTitle]="true"
+            [titleColor]="'blue'"
+            [titleFontSize]="'1.5em'"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="15"
+            [innerStrokeWidth]="5"
+            [outerStrokeColor]="'blue'"
+            [innerStrokeColor]="'green'"
+            [animation]="true"
+            [animationDuration]="300"
+            [units]="''"
+            ></circle-progress>
+            
+        </div>
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" >
+            <circle-progress
+            [percent]="65"
+            [radius]="100"
+            [title]="'CSS'"
+            [showTitle]="true"
+            [titleColor]="'blue'"
+            [titleFontSize]="'1.5em'"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="15"
+            [innerStrokeWidth]="5"
+            [outerStrokeColor]="'blue'"
+            [innerStrokeColor]="'green'"
+            [animation]="true"
+            [animationDuration]="300"
+            [units]="''"
+            ></circle-progress>
+            
+        </div>
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" >
+            <circle-progress
+            [percent]="70"
+            [radius]="100"
+            [title]="'Java'"
+            [showTitle]="true"
+            [titleColor]="'blue'"
+            [titleFontSize]="'1.5em'"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="15"
+            [innerStrokeWidth]="5"
+            [outerStrokeColor]="'blue'"
+            [innerStrokeColor]="'green'"
+            [animation]="true"
+            [animationDuration]="300"
+            [units]="''"
+            ></circle-progress>
+            
+        </div>
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" >
+            <circle-progress
+            [percent]="85"
+            [radius]="100"
+            [title]="'VBA'"
+            [showTitle]="true"
+            [titleColor]="'blue'"
+            [titleFontSize]="'1.5em'"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="15"
+            [innerStrokeWidth]="5"
+            [outerStrokeColor]="'blue'"
+            [innerStrokeColor]="'green'"
+            [animation]="true"
+            [animationDuration]="300"
+            [units]="''"
+            ></circle-progress>
+            
+        </div>
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" >
+            <circle-progress
+            [percent]="65"
+            [radius]="100"
+            [title]="'Bootstrap'"
+            [showTitle]="true"
+            [titleColor]="'blue'"
+            [titleFontSize]="'1.5em'"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="15"
+            [innerStrokeWidth]="5"
+            [outerStrokeColor]="'blue'"
+            [innerStrokeColor]="'green'"
+            [animation]="true"
+            [animationDuration]="300"
+            [units]="''"
+            ></circle-progress>
+            
+        </div>
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" >
+            <circle-progress
+            [percent]="65"
+            [radius]="100"
+            [title]="'Python'"
+            [showTitle]="true"
+            [titleColor]="'blue'"
+            [titleFontSize]="'1.5em'"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="15"
+            [innerStrokeWidth]="5"
+            [outerStrokeColor]="'blue'"
+            [innerStrokeColor]="'green'"
+            [animation]="true"
+            [animationDuration]="300"
+            [units]="''"
+            ></circle-progress>
+            
+        </div>
+        <div class="text-center col-sm-3 col-md-3 col-lg-3 circle" >
+            <circle-progress
+            [percent]="60"
+            [radius]="100"
+            [title]="'TypeScript'"
+            [showTitle]="true"
+            [titleColor]="'blue'"
+            [titleFontSize]="'1.5em'"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="15"
+            [innerStrokeWidth]="5"
+            [outerStrokeColor]="'blue'"
+            [innerStrokeColor]="'green'"
+            [animation]="true"
+            [animationDuration]="300"
+            [units]="''"
+            ></circle-progress>
+            
+        </div>
+    </div>
+
 </div>

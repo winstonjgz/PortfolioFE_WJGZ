@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Hysoft } from 'src/app/model/Hysoft';
-import { HysoftService } from 'src/app/services/hysoft.service';
+import { Hysoft } from 'src/app/model/hysoft';
+import { HabilidadService } from 'src/app/services/habilidad.service';
 import { TokenService } from 'src/app/services/token.service';
 
 @Component({
@@ -9,27 +9,27 @@ import { TokenService } from 'src/app/services/token.service';
   styleUrls: ['./habilidades.component.css']
 })
 export class HabilidadesComponent implements OnInit {
-  hysoftC: Hysoft[]=[];
+  /* habilidad: Hysoft[]=[]; */
 
   constructor(
-    private sHabilidad:HysoftService, private tokenService: TokenService
+    /* private sHabilidad:HabilidadService, private tokenService: TokenService */
   ) { }
-    isLogged=false;
+    /* isLogged=false; */
     
   ngOnInit(): void {
-    this.cargarHabilidades;
+    /* this.cargarHabilidades;
     if(this.tokenService.getToken()){
       this.isLogged=true;
     }else{
       this.isLogged= false;
-    }
+    } */
   }
 
-  cargarHabilidades(): void{
+/*   cargarHabilidades(): void{
     this.sHabilidad.lista().subscribe(
       
       data=> {
-        this.hysoftC=data;
+        this.habilidad=data;
       }
       )
     }
@@ -44,7 +44,7 @@ export class HabilidadesComponent implements OnInit {
           }
         )
       }
-    }
+    } */
 }
 
   

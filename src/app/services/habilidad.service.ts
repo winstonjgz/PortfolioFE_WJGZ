@@ -3,12 +3,12 @@ import { Injectable } from '@angular/core';
 
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Hysoft } from '../model/Hysoft';
+import { Hysoft } from '../model/hysoft';
 
 @Injectable({
   providedIn: 'root'
 })
-export class HysoftService {
+export class HabilidadService {
 
   habilidadURL=environment.URL+'rhysoft/';
 
@@ -24,12 +24,12 @@ export class HysoftService {
   
   }
   
-  public save(hysoft: Hysoft): Observable<any>{
-    return this.httpClient.post<any>(this.habilidadURL + `create`, hysoft);
+  public save(habilidad: Hysoft): Observable<any>{
+    return this.httpClient.post<any>(this.habilidadURL + `create`, habilidad);
   }
   
-  public update(id: number, hysoft: Hysoft): Observable<any>{
-    return this.httpClient.put<any>(this.habilidadURL +`update/${id}`, hysoft);
+  public update(id: number, habilidad: Hysoft): Observable<any>{
+    return this.httpClient.put<any>(this.habilidadURL +`update/${id}`, habilidad);
   
   }
   
