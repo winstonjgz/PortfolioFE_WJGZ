@@ -1,28 +1,32 @@
-.row{
+/* .row{
     padding: 20px;
-}
+} */
 
 div{
-    text-align: justify;
+    text-align:justify;
     background-color: rgb(46, 177, 238);
-
+    display: grid;
+    
+    
 }
 
 @media (min-width: 550px){
     img{
-        position:absolute;
+        position:relative;
         border-radius: 75%;
         left:5%;
         box-shadow: 8px;
+       
     }
 }
 
 @media (max-width: 549px){
     img{
-        position:absolute;
+        position:relative;
         border-radius: 75%;
         left:5%;
         box-shadow: 8px;
+        
     }
 }
 
@@ -31,22 +35,27 @@ div{
 }
 
 #nombre{
-    margin-top: 50px;
+    margin-top: 7em;
+    padding: 2%;
     font-weight: bold;
-	display: flex;
+	display: inline-flexbox;
+    position: relative;
 	justify-content: center;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 img{
-    position: absolute;
+    position: relative;
     border-radius: 75%;
 }
 
 p{
-    
-	display: flex;
-	justify-content: center;
+    text-align:justify;
+    position: relative;
+    padding: 5%;
+    margin: 1em;
+	display:initial;
+	
    
 }
